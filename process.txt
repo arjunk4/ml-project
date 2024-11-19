@@ -1,0 +1,65 @@
+D1:
+1. 2 layers
+2. With Relu
+3. Batch size = 64
+4. Gamma = 0.7
+5. LR = 2
+Correct % predictions for SE 1-8: ['69.09%', '53.19%', '51.70%', '74.90%', '99.90%', '99.58%', '100.00%', '99.59%']
+D1 WITH BATCH SIZE = 32 AND LR = 0.5:
+['72.57%', '53.09%', '49.23%', '69.48%', '99.80%', '99.79%', '100.00%', '100.00%']
+D2:
+1. NO RELU, but with 3 layers
+2. All others same as D1
+Correct % predictions for SE 1-8: ['24.46%', '27.05%', '47.88%', '57.46%', '95.25%', '95.92%', '95.35%', '94.99%'] 
+
+D3: 
+1. 3 LAYERS
+2. All others same as D1
+
+Choose whichevers better in D2 and D3: D3	
+
+D4:
+1. Layers same as D3
+2. LR = 1, 2, 3
+
+LR =1 performed the best
+
+D5:
+1. Take LR = 0.8
+2. Take batch size of training as 32
+3. 3 layers
+4. Relu used
+5. Gamma = 0.7 same as D1
+
+Didnt perform as well as LR =1
+
+D6:
+1. LR=1
+2. Gamma = 0.6
+3. Batch size = 64
+4. 3 layers
+5. Relu used
+
+D7:
+1. Batch size = 64
+2. Gamma = 0.6
+3. 4 layers
+4. LR = 1
+5. Relu used
+Correct % predictions for SE 1-8: ['70.32%', '58.28%', '43.17%', '60.24%', '99.70%', '99.16%', '99.41%', '99.90%']
+Accuracy did not inc that much, so no use of 4 layers
+
+D8:
+1. Gamma = 0.8
+2. Everything else is the same as D6
+
+D9:
+1. Gamma = 0.8
+2. LR = 0.6
+3. Others are same 
+Correct % predictions for SE 1-8: ['69.40%', '51.70%', '52.12%', '71.37%', '99.41%', '99.79%', '99.21%', '99.60%']
+
+Compare D8 AND D6 AND D4 AND D1.
+
+
+ 
