@@ -138,7 +138,7 @@ class TwoImageDataset(torch.utils.data.Dataset):
 
 def main():
     # Training settings
-    parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
+    parser = argparse.ArgumentParser(description='Example') #changed description
     parser.add_argument('--batch-size', type=int, default=64, metavar='N',
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1, metavar='N',
@@ -221,9 +221,6 @@ def main():
         train(args, model, device, train_loader, optimizer, epoch)
         test(model, device, test_loader, epoch)
         scheduler.step()
-
-    if args.save_model: 
-        torch.save(model.state_dict(), "mnist_cnn.pt")
 
 
 if __name__ == '__main__':
